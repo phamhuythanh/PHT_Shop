@@ -24,13 +24,13 @@ class UserController extends Controller
         $user = Admin::where('admin_email',$data['admin_email'])->first();
         $user->roles()->detach();
         if($request['author_role']){
-           $user->roles()->attach(Roles::where('name','author')->first());     
+           $user->roles()->attach(Roles::where('name','author')->first());
         }
         if($request['user_role']){
-           $user->roles()->attach(Roles::where('name','user')->first());     
+           $user->roles()->attach(Roles::where('name','user')->first());
         }
         if($request['admin_role']){
-           $user->roles()->attach(Roles::where('name','admin')->first());     
+           $user->roles()->attach(Roles::where('name','admin')->first());
         }
         return redirect()->back()->with('message','Thêm quyền thành công');
     }
