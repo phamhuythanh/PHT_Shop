@@ -14,11 +14,6 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
-
--- Dumping database structure for phtshop
-CREATE DATABASE IF NOT EXISTS `phtshop` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `phtshop`;
-
 -- Dumping structure for table phtshop.admin_roles
 CREATE TABLE IF NOT EXISTS `admin_roles` (
   `id_admin_roles` int NOT NULL AUTO_INCREMENT,
